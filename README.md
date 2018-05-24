@@ -2,7 +2,7 @@
 
 
 !!!IMPORTANT!!!
-Due to the sensitive nature of the data being returned for this application it cannot be displayed publicaly.  In this version there is no APIURL or VALID API KEY. Therefore this application will NOT RETURN RESULTS.
+Due to the sensitive nature of the data being returned for this application and API terms and permissions, it cannot be displayed publicaly.  In this version there is no APIURL or VALID API KEY. Therefore this application will NOT RETURN RESULTS.
 
 If you are a recruiter and would like a functioning version of Jetset to review, please contact me info@blockctrl.com.
 
