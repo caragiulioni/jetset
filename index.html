@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+	<title>Jetset</title>
+	<link rel="icon" type="image/png" href="images/favicon.ico" />
+	<meta property="og:title" content="Jetset">
+	<meta property="og:description" content="description goes here">
+	<meta property="og:image" content="http://anysite/thumbnail.jpg">
+	<meta property="og:url" content="http://anysite/index.html">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="imagepath">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	<script src="https://use.fontawesome.com/28ce494825.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Lato|Roboto|Ropa+Sans|Source+Sans+Pro|itillium+Web:300|Dosis" rel="stylesheet">
+	<meta name="keywords" content="keywords etc"/>
+	<meta name="Cara Giulioni" content="" />
+</head>
+<body>
+
+	<header class="headerWrapper">
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<div class="logo"><a href="index.html"><img src="images/jetlogo.png" alt="Jet Set text Logo"></a></div>
+	<section class="mainWrapper">
+		<form id="form">
+			<div>
+				<h2>region:</h2>
+					<select name="optone" id="regionSel" size="1">
+	        		<option value="" selected="selected">Select region</option>
+	    			</select>
+			</div>
+
+			<div>
+				<h2>origin city:</h2>
+    				<select name="opttwo" id="originSel" size="1">
+        			<option class="originInput" value="" selected="selected" id="origincity">Select region first</option>
+        			</select>
+			</div>
+
+			<div>
+        			<input name="origin" type="hidden" id="origin" onkeyup="stoppedTyping()"></input> <!-- IMPORTANT!!!! this div is hidden but contains final origin value to be sent in the AJAX call -->
+			</div>
+
+			<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+			<div class="options budgetOption">
+				<h2>your budget:<i class="fa fa-info-circle" class="tooltip" aria-hidden="true"><span>How much would you like to spend on your trip? Keep in mind your budget choice is submitted in the currency of your origin city. You can leave this blank if you really want to keep your options open.</span></i></h2>
+				<input class="budget" type="text" name="max_price" id="max_price" placeholder="ex. 425">
+			</div>
+
+			<div class="options departOption">
+				<h2>depart:<i class="fa fa-info-circle" class="tooltip" placeholder="ex.7" aria-hidden="true"><span>When would like to leave? Not sure when you're leaving? Don't enter anything, we can still suggest some trips for you.</span></i></h2>
+				<input class="datepicker ll-skin-latoja depart" type="text" id="departure_date" name="departure_date" placeholder="yyyy/mm/dd">
+			</div>
+
+			<div class="direct directOption"><h2>direct only:</h2></div>
+				<div class="directCheck"><input type="checkbox" id="direct" name="direct" value="false" name="acceptRules" ><i class="fa fa-info-circle" class="tooltip" aria-hidden="true"><span>Having a stop or two often helps you find a better deal, but if you don't want to stop we don't blame you.  Just check this box, we totally get it.</span></i>
+			</div>
+
+			<div class="submitButton"><button id="submit">Submit</button></div>
+			<div class="direct directOption"><h2>results may take a second!</h2></div>
+		</form>
+
+		<div class="results">
+			 <p>Hello Traveler! We've populated a list of suggested trips for you. You can now search any of the following destinations + their corresponding details on the related airline website to book your trip. Thanks for using Jetset.</p>
+			 <div class="originCity"><p>Your departing city is: <span id="originResult"></span></p></div>
+		</div>
+
+		<div class="error"></div>
+		<div class="processing"><div>
+
+	</section>
+
+<footer><div class="adventure"><h3>adventure is worthwhile.</h3></div></footer>
+
+</main>
+</body>
+</html>
+

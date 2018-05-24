@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+		<title>Jetset - Contact</title>
+		<link rel="icon" type="image/png" href="images/favicon.ico" />
+		<meta property="og:title" content="Jetset - Contact">
+		<meta property="og:description" content="description goes here">
+		<meta property="og:image" content="http://anysite/thumbnail.jpg">
+		<meta property="og:url" content="http://anysite/index.html">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="imagepath">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/28ce494825.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Abel|Lato|Roboto|Ropa+Sans|Source+Sans+Pro|itillium+Web:300|Dosis" rel="stylesheet">
+			<meta name="keywords" content="keywords etc"/>
+		<meta name="author" content="Cara Giulioni" />
+	
+</head>
+<body class="about">
+
+	<header class="headerWrapper">
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<main>
+	<div class="logo"><a href="index.html"><img src="images/jetlogo.png" alt="Jet Set text Logo"></a></div>
+<section class="mainWrapper contactContainer">
+	<div class="contact">
+		<div class="contactHeading"><h2>Contact</h2></div>
+			<div class="contactText">
+				<p>Confused? Impressed? Want someone to talk to? Whatever the case we would love to hear from you. Give us a shout</p>
+			</div>
+	</div>
+	<div class="contactForm">
+		<form id="ajax-contact" method="post" action="mailer.php">
+		    <div class="contactName">
+		        <h2>Your name</h2>
+		        <input type="text" id="name" placeholder="Jane Q. Travelot" name="name" required>
+		    </div>
+
+		    <div class="contactEmail">
+		        <h2>Your email</h2>
+		        <input type="email" id="email" placeholder="ohThePlacesToGo@worldmail.com" name="email" required>
+		    </div>
+
+		    <div class="contactMessage">
+		        <h2>Your messsage</h2>
+		        <textarea id="message" placeholder="My, what an innovative idea. Someone hire this girl at once!" name="message" required></textarea>
+		    </div>
+
+		
+		    <div class="contactSubmit">
+		        <button type="submit">submit</button>
+		        <div class="requiredFields"><p>*all fields are required</p>
+		    </div>
+		</form>
+
+	</div>	
+</section>
+
+<footer><div class="adventure"><h3>adventure is worthwhile.</h3></div></footer>
+</main>
+	
+	
+</body>
+</html>

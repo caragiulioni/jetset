@@ -1,0 +1,705 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+/*colors{
+	offwhite main: #f1f8fd
+	dark purple: #3C373E;
+	medium purple: #79737D;
+	grey black: #494B52;
+	Grey Blue: #46698B;
+}*/
+
+
+/*fonts{
+font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+font-family: 'Lato', , 'Roboto', sans-serif;
+
+}*/
+
+
+header,
+footer, 
+section {
+   overflow: auto;
+}
+
+
+body{
+	font-size: 16px;
+}
+
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+
+*{margin:0; padding:0;
+}
+
+
+body{
+    background: url(images/jetbackground.jpg) no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.headerWrapper{
+	width: 95vw;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+nav{
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 5vh;
+}
+
+ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	width: 250px;
+}
+
+main{
+	margin: 0 auto;
+	margin-top: 5vh;
+}
+
+a, h2, h3, h4{
+	font-size: 1.5em;
+	padding-right: 10px;
+	color: #f1f8fd;
+}
+
+a{
+	font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+	font-weight: bold;
+}
+
+a:active {
+	color: #79737D;
+}
+
+a:focused { 
+color: #79737D;
+}
+
+a:hover{
+	color: #79737D;
+	transition: .3s;
+}
+
+h2, h3, h4 {
+	font-family:'Dosis', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+
+section{
+	display: flex;
+	justify-content: center;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+.direct h2{
+	font-size: .9em;
+}
+
+
+form{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width:300px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: rgba(241, 248, 253, .2);
+	padding-bottom: 20px;
+}
+
+input, select{
+	width: 150px;
+	height: 30px;
+}
+
+
+option{
+	font-size: 5rem;
+}
+ 
+
+.ui-icon{
+	font-size: .8em;
+}
+
+
+.direct{
+	padding-bottom: 5px;
+}
+
+.directCheck{
+	display: flex;
+	align-content: baseline;
+	justify-content: center;
+}
+
+.directCheck input{
+	width:15px;
+	height: 15px;
+	margin-top: 1px;
+
+}
+
+.submitButton :active {
+	background-color: #79737D;
+}
+
+.submitButton :focused { 
+background-color: #79737D;
+}
+
+button :hover{
+	background-color: #79737D;
+	transition: .3s;
+}
+
+button {
+	width: 150px;
+	font-size: 1.2rem;
+	margin-top: 20px;
+	background-color: #3C373E;
+	border-radius: 5px;
+	color: #f1f8fd;
+	border: none;
+	padding: 5px;
+	font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+i{
+	padding-left: 15px;
+	color: #f1f8fd;
+}
+
+.dateformat h2{
+	padding: 0;
+}
+
+.options i{	
+	position: relative
+	z-index: 99;
+	font-size: .8em;
+}
+
+
+span{
+	border-radius: 10px;
+}
+
+.directCheck span{
+	font-size: 1em;
+}
+
+i span {
+	text-align: left;
+  display: none;
+  position: absolute;	
+  width: 200px;
+  padding: 10px;
+  background-color: #3C373E;
+  z-index: 89;
+  font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+  font-size: .8em;
+
+}
+
+i:hover span {
+  display: block
+}
+
+.logo img{
+	margin: 0 auto;
+	opacity: .8;
+
+}
+
+.processing{
+	color: #f1f8fd;
+	font-family:'Dosis', sans-serif;
+	 font-size: 1rem;
+	 opacity: 0.8;
+}
+
+.processing img{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.line {
+	display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #f1f8fd;
+        margin-right: 10px;
+}
+
+.load-3 {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.load-3 .line:nth-last-child(1) {animation: loadingC .6s .1s linear infinite;}
+.load-3 .line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
+.load-3 .line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
+
+
+footer{
+	bottom: 0;
+	padding: 20px 0px 30px 0px;
+	font-size: 1.5rem;
+	text-align: center;
+	opacity: .9;
+	margin-top: 10px;
+}
+
+footer h3{
+	margin: 0 auto;
+	color: #f1f8fd;
+}
+
+/*//////////////////////////////// RESULTS/////////////////////////////*/
+
+.results{
+	display: none;
+	position: absolute;
+	width: 800px;
+	overflow: auto;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.results p{
+		margin: 25px;
+		padding: 15px;
+		background-color: #f1f8fd;
+		border-radius: 10px;
+		font-size: 1.5rem;
+	font-family: 'Ropa Sans', sans-serif;
+	color: #494B52;
+}
+
+.originCity{
+	display: flex;
+	justify-content: center;
+}
+
+.originCity p, .originCity span{
+		font-size: 1.7rem;
+		text-align: center;
+}
+
+.originCity span{
+	color: #46698B;
+}
+
+.flights{
+	display: flex;
+	width: 275px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: #f1f8fd;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.flightResult{
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+.flightResult h1, .flightResult h2{
+	font-family:'Dosis', sans-serif;
+	margin: 0;
+	padding:0;
+}
+
+.flightResult h1{
+	color: #46698B;
+	font-size: 1.6rem;
+}
+
+.flightResult h2{
+	color: #3C373E;
+	font-size: 1.5rem;
+}
+
+.tripNumber h1{
+		color: #514F5C;
+		font-size: 1.7rem;
+		font-weight: bold;
+		text-transform: uppercase;
+}
+
+.info{
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#ui-datepicker-div { display: none; } 
+
+.ui-icon {
+    font-size: 1rem;
+}
+
+.ui-datepicker{
+	font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+	color: #f1f8fd;
+	font-size: 1.4rem;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.ui-widget{
+	background-color: #494B52;
+}
+
+
+th{
+	font-size: 1rem;
+	text-align: left;
+}
+
+.ui-datepicker a{
+	font-size: 1rem;
+	
+}
+
+.errorMessage{
+		text-align: center;
+	border-radius: 5px;
+	padding: 25px;
+	background-color: rgba(241, 248, 253, .2);
+}
+
+.errorMessage h1, .errorMessage h2, .errorMessage p{
+	font-family: 'Dosis', sans-serif;
+	padding: 0;
+	color: #f1f8fd;
+	font-size: 1.5rem;
+}
+
+.errorMessage p{
+	font-size: 1.3rem;
+}
+
+
+/*///////////////////ABOUT////////////////////////////*/
+
+.about .mainWrapper{
+	background-color: rgba(241, 248, 253, .9);
+	padding: 30px;
+	width:50vw;
+	border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.aboutJetset{
+	width: 100%;
+	overflow: auto;
+}
+
+.about p{
+	font-size: 1.2em;
+	padding-bottom: 15px;
+	font-family: 'Ropa Sans', sans-serif;
+	color: #494B52;
+}
+
+.about .aboutlast{
+	margin-bottom: 15px;
+}
+
+.about h2, h3{
+	font-family: 'Titillium Web','Abel', 'Ropa Sans', sans-serif;
+	color: #46698B;
+	text-transform: lowercase;
+	padding-top: 0;
+}	
+
+.howItWorks h2{
+	text-align: left;
+}
+
+
+.about h2{
+	font-size: 2em;
+}
+
+.about section{
+	display: block;
+	justify-content: center;
+}
+
+.about .things{
+	margin-top: 15px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.contactHeading{
+	text-align: center;
+}
+
+.contactForm h2{
+	font-size: 1.5em;
+	padding-right: 10px;
+	color: #46698B;
+}
+
+.contactForm input, textarea{
+	margin-bottom: 15px;
+}
+
+.about textarea{
+	width: 300px;
+	height: 200px;
+}
+
+.requiredFields p{
+	margin-top: 10px;
+	font-size: 1rem;
+
+}
+
+.contactText{
+	margin: 0 auto;
+	width: 300px;
+	margin-top: 10px;
+}
+
+.contactContainer{
+	background-color: rgba(241, 248, 253, .2);
+}
+
+/*lets make the scroll bar pretty*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	background:rgba(255,255,255,.2);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(255,255,255,.2);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+@media (max-width: 800px){
+		.results {
+	    width: 90vw;
+	}
+
+	nav {
+	    justify-content: space-around;
+		padding-top: 20px;
+	}
+
+	 nav ul {
+	justify-content: space-between;
+	    width: 250px;
+	}
+
+	a {
+		padding: 0;
+	}
+
+	.about .mainWrapper{
+	    margin-top: 25px;
+		padding-top: 15px;
+		width:90vw;
+	}
+
+	.ui-datepicker-calendar{
+		width: 200px;
+	}
+
+	.logo img{
+		margin-bottom: 20px;
+	}
+
+	.options i, .directCheck i{
+		display: none;
+	}
+
+}
+
+@media (max-width: 500px){
+
+	main{
+		margin-top: 0px;
+	}
+
+	li{
+	 padding-right: 0 ;
+	}
+
+	a {
+		padding: 0;
+		font-size: 1.2rem
+	}
+
+	h2 {
+		font-size: 1.3rem;
+	    padding-top: 10px;
+	    padding-bottom: 5px;
+	}
+
+	nav {
+	    justify-content: space-around;
+	padding-top: 20px;
+
+	}
+
+	ul {
+	justify-content: space-between;
+	    width: 200px;
+	}
+
+
+	.logo{
+		margin-top: 20px;
+	}
+	.results {
+	    width: 360px;
+	}
+
+	.results p {
+	    margin: 10px;
+	   font-size: 1.1rem;
+	}
+
+	.logo{
+		height: 115px;
+	}
+
+	.logo img  {
+	    width: 250px;
+
+	}
+
+	.originCity p, .originCity span {
+	    font-size: 1.1rem;
+	}
+
+	.info {
+	    padding: 5px 0;
+	}
+
+	.tripNumber h1 {
+
+	    font-size: 1.1rem;
+	}
+
+	.flightResult h1 {
+	    font-size: 1.1rem;
+	}
+
+	.flightResult h2 {
+	    font-size: 1.1rem;
+	}
+
+	footer{
+		font-size: 1.1rem;
+
+	}
+
+	.adventure h3{
+		padding: 0;
+	}
+
+
+	.about .mainWrapper{
+	        margin-top: 0px;
+			padding-top: 15px;
+
+	}
+
+	.about h2 {
+	    font-size: 1.3rem;
+	}
+
+	.about p {
+	    font-size: 1rem
+	}
+
+	.aboutJetSet h3{
+		font-size: 1.1rem;
+	}
+
+	.errorMessage {
+		width: 90vw;
+	}
+
+	.errorMessage h2, .errorMessage p{
+		font-size: 1.2rem;
+	}
+
+	.errorMessage button{
+		width: 125px;
+	}
+
+	.processing h1{
+		font-size: 1.2rem;
+	}
+
+	.processing img{
+		width: 200px;
+	}
+
+	.ui-datepicker-div{
+		width: 600px;
+	}
+}
+
+
+
+@keyframes loadingC {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
+}
