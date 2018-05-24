@@ -6,7 +6,7 @@ Due to the sensitive nature of the data being returned for this application and 
 
 If you are a recruiter and would like a functioning version of Jetset to review, please contact me info@blockctrl.com.
 
-Jetset is an innivative web application that allows site visitors to search for flights based on the limites of their budget.
+Jetset is an innovative web application that allows site visitors to search for flights based on the limites of their budget.
 
 EX. I am in New York, I have $500, show me all the flights leaving on (day/month)
 
